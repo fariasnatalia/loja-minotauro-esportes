@@ -1,0 +1,114 @@
+/* Conteudo header */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff; /* branco neve */
+    font-family: 'Helvetica', Arial, sans-serif; /* fonte Helvetica */
+    color: black;
+  }
+  
+  header {
+    background-color: #ff3300; /* Define a cor de fundo do cabeçalho */
+    color: white; /* Define a cor do texto do cabeçalho */
+    text-align: center;
+    padding: 10px;
+    font-size: 24px; /* Tamanho da fonte do cabeçalho */
+  }
+  
+  .titulo-carrinho {
+    text-align: center;
+    font-size: 15px; /* Tamanho da fonte para o título do carrinho */
+    font-family: Arial, sans-serif; /* Família de fontes para o título do carrinho */
+  }
+  /* Conteudo main */
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh; /* responsivo */
+  }
+  
+  fieldset {
+    margin-right: 10px;
+    padding: 40px 60px; /* responsivo */
+    border: 1px solid rgba(128, 128, 128, 0.952);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+  }
+  
+  input,
+  select,
+  button {
+    outline: none;
+    display: block;
+    margin-top: 6px;
+    border: 0.5px solid rgba(128, 128, 128, 0.952);
+    width: 100%; /* Responsivo */
+    padding: 10px; /* Responsivo */
+  }
+  
+  form:hover {
+    max-height: 70vh;
+  }
+  
+  button { /* botão conituar comprando */
+    background-color: #e44d26;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%; /* Responsivo */
+    padding: 10px;
+    color: whitesmoke;
+    border: 1px solid rgba(128, 128, 128, 0.952);
+    border-radius: 8px;
+    margin: 10px 0 1px; 
+    text-decoration: underline; /* Adicione sublinhado ao passar o mouse sobre o botão */
+  }
+  
+  button:hover {
+    background-color: #ff6600; /* Cor laranja para o efeito hover */
+    color: white; /* texto branco */
+    font-weight: bolder;
+  }
+  
+  /* Rodape */
+  footer {
+    background-color: #ff3300; /* Define a cor de fundo do rodapé */
+    color: white; /* Define a cor do texto do rodapé */
+    text-align: center;
+    padding: 10px;
+    position: absolute; /* Fixa o rodapé na parte inferior da página */
+    bottom: 0;
+    width: 100%;
+  }
+  /* Estilos para os links no rodapé */
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-right: 20px;
+    
+  }
+  
+  .footer-links a {
+    text-decoration: none; /* Remova a formatação de sublinhado dos links */
+    color: whitesmoke;
+    font-weight: normal; /* Defina a espessura da fonte como negrito */
+  }
+  
+  /* Estilos para os links no hover (quando o mouse passa por cima) */
+  .footer-links a:hover {
+    text-decoration: underline; /* Adicione sublinhado ao passar o mouse sobre os links */
+  }
+  
+  
+  .fab {
+    font-size: 1.5rem; /* responsivo */
+  }
+  
+  

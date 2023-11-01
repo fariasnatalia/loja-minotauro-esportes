@@ -14,10 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product_id'])) {
     $item_index = array_search($product_id, array_column($_SESSION['carrinho'], 'product_id'));
 
     if ($item_index !== false) {
-       
+
         $_SESSION['carrinho'][$item_index]['quantity'] += $quantity;
     } else {
-        
+
         $item = [
             'product_id' => $product_id,
             'product_name' => $product_name,
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product_id'])) {
         $_SESSION['carrinho'][] = $item;
     }
 
-   
+
     header('Location: carrinho.php');
     exit;
 }
@@ -66,20 +66,32 @@ $carrinho_vazio = empty($_SESSION['carrinho']);
 <!--HTML DO CARRINHO-->
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles/style_carrinho.css">
 </head>
+
 <body>
-    <h1>Carrinho de Compras</h1>
+    <header>
+        <h1> Minotauro Esportes</h1>
+    </header>
+
+    <div class="titulo-carrinho">
+        <h1>
+            <center>Carrinho de Compras
+        </h1> <!--Título do carrinho -->
+    </div>
+
     <table>
         <tr>
-            <th>Produto</th>
-            <th>Nome</th>
-            <th>Preço</th>
-            <th>Quantidade</th>
-            <th>Valor Total</th>
+            <th>Produto:</th>
+            <th>Nome:</th>
+            <th>Preço:</th>
+            <th>Quantidade:</th>
+            <th>Valor Total:</th>
             <th>Ação</th>
         </tr>
         <?php
@@ -111,45 +123,75 @@ $carrinho_vazio = empty($_SESSION['carrinho']);
         echo "<p>Seu carrinho está vazio. Adicione pelo menos um item para finalizar o pedido.</p>";
     } else {
     ?>
-    <p>Total do Carrinho: R$ <?php echo number_format($total_carrinho, 2, ',', '.'); ?></p><br>
+        <p>Total do Carrinho: R$ <?php echo number_format($total_carrinho, 2, ',', '.'); ?></p><br>
 
-    <p>Escolha o método de pagamento:</p>
-    <form action="finalizar_pedido.php" method="post">
-        <select name="metodo_pagamento">
-            <option value="pix">Pix</option>
-            <option value="boleto">Boleto Bancário</option>
-            <option value="cartao">Cartão de Crédito</option>
-        </select>
-        <input type="submit" value="Finalizar Pedido">
-    </form>
+        <p>Escolha o método de pagamento:</p>
+        <form action="finalizar_pedido.php" method="post">
+            <select name="metodo_pagamento">
+                <option value="pix">Pix</option>
+                <option value="boleto">Boleto Bancário</option>
+                <option value="cartao">Cartão de Crédito</option>
+            </select>
+            <input type="submit" value="Finalizar Pedido">
+        </form>
     <?php
     }
     ?>
 
-    <a href="index.php">Continue Comprando</a>
-    
-    <!--RODAPE-->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="logo.png" alt="Minotauro Esportes">
-                <p>Minotauro Esportes &copy; 2023</p>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Termos de Uso</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <p>Siga-nos nas redes sociais:</p>
+    <button><a href="index.php">Continue Comprando</a></button>
+    <style>
+        table {
+            /*tabela: Produto/Preço */
+            background-color: #ff33;
+            /* Define a cor de fundo da tabela de itens */
+            width: 100%;
+            border-collapse: collapse;
+
+        }
+
+        th,
+        td {
+            border: 1px solid #ff3300;
+            /* Define a cor da borda da tabela */
+            padding: 8px;
+            text-align: left;
+        }
+
+        table img {
+            max-width: 100px;
+        }
+
+        a {
+            color: white;
+            /* Define a cor do link para os botões de ação */
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
+
+    <body>
+
+        <!--RODAPE-->
+        <footer>
+            <p>Minotauro Esportes © 2023</p>
+            <ul>
+                <a href="https://github.com/fariasnatalia/loja-minotauro-esportes">Termos de Uso</a>
+                
+                <a href="https://github.com/fariasnatalia/loja-minotauro-esportes">Política de Privacidade</a>
+                
+                <a href="https://github.com/fariasnatalia/loja-minotauro-esportes">Contato</a>
+            </ul>
+
+        </footer>
+        <!-- <div class="footer-social">
+               
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-        </div>
-    </footer>
+        </div> -->
+        </footer>
 
-</body>
+    </body>
+
 </html>
