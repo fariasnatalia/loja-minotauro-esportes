@@ -1,0 +1,135 @@
+/* Estilos base */
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+button {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+a {
+    text-decoration: none;
+    color: #ff6600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para a mensagem de sucesso */
+p.alert-success {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilos para o método de pagamento e valor total */
+p.payment-method {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+p.total-amount {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos para o botão de impressão */
+button#print-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 20px 0;
+}
+
+button#print-button:hover {
+    background-color: #000;
+}
+
+/* Estilos para o cabeçalho da tabela */
+table thead {
+    background-color: #333;
+    color: white;
+}
+
+/* Media queries para responsividade */
+
+/* Para telas menores (como celulares) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Para telas ainda menores (como dispositivos muito pequenos) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
+
+

@@ -1,0 +1,10 @@
+CREATE DATABASE minotauro_esportes;
+
+USE minotauro_esportes;
+
+CREATE TABLE usuarios (
+    id_usuario INT(11) PRIMARY KEY AUTO_INCREMENT,
+    nome_completo VARCHAR(255),
+    email VARCHAR(255),
+    senha VARCHAR(255)
+);
