@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </main>
       <!--Rodapé-->
     <footer>
-        <div class="footer-content">
+        <!-- <div class="footer-content">
             <div class="footer-logo">
                 <p>Minotauro Center &copy; 2023</p>
             </div>
@@ -92,13 +92,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <li><a href="#">Política de Privacidade</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
-            </div>
+            </div> -->
             <div class="footer-social">
                 <p>Siga-nos nas redes sociais:</p>
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+            <!-- </div> -->
         </div>
     </footer>
 </body>

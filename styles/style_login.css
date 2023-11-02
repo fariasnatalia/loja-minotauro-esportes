@@ -76,13 +76,13 @@ body {
     padding: 20px 0;
   }
   
-  .footer-logo ul,
+  /* .footer-logo ul,
   .footer-links ul {
     list-style-type: none;
     padding: 0;
   }
-  
-  .footer-links li {
+   */
+  /* .footer-links li {
     display: inline;
     margin-right: 20px;
   }
@@ -91,8 +91,8 @@ body {
     text-decoration: none;
     color: whitesmoke;
     font-weight: bold;
-    font-size: 1rem; /* responsivo */
-  }
+    font-size: 1rem; /* responsivo 
+  } */
   
   .footer-social {
     margin-top: 20px;

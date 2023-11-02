@@ -39,25 +39,21 @@
     </main>
     <!--Rodapé-->
     <footer>
-    <div class="footer-content">
-        <div class="footer-logo">
-            <img src="logo.png" alt="Minotauro Esportes">
-            <p>Minotauro Esportes &copy; 2023</p>
-        </div>
-        <div class="footer-links">
+        <div class="footer-social">
+            <p>Siga-nos nas redes sociais:</p>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div> 
+   
+    </footer>        <!-- <div class="footer-links">
             <ul>
                 <li><a href="#">Termos de Uso</a></li>
                 <li><a href="#">Política de Privacidade</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </div>
-        <div class="footer-social">
-            <p>Siga-nos nas redes sociais:</p>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-    </div>
-</footer>
+        
+
 </body>
 </html>

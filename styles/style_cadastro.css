@@ -76,34 +76,6 @@ footer {
   padding: 20px 0;
 }
 
-.footer-logo ul,
-.footer-links ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-links li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: whitesmoke;
-  font-weight: bold;
-  font-size: 1rem; /* responsivo  */
-}
-
-.footer-social {
-  margin-top: 20px;
-}
-
-.footer-social a {
-  color: whitesmoke;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 1.5rem; /* responsivo  */
-}
 
 .fab {
   font-size: 1.5rem; /* responsivo  */
